@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+</head>
+<body>
+    <h1>Cadastro de produtos</h1>
+
+    <form action="" method="post">
+        <div>
+            <label for="Nome"> Nome do produto</label> <br>
+            <input type="text" id="Nome" name="produto">
+        </div>
+
+        <div>
+            <label for="Valor">Valor do produto</label> <br>
+            <input type="text" name="Valor" id="Valor" step="0.5" max="10" min="1" placeholder="Insira o valor">
+        </div>
+
+        <div>
+            <label for="cor">Cor do produto</label> <br>
+            <input type="color" name="cor" id="cor" >
+        </div>
+
+        <div>
+            <label for="cor">Descrição sobre o produto</label> <br>
+            <textarea name="descricao" id="descricao" rows="10"></textarea>
+        </div>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
