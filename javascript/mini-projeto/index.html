@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Projeto - LISTAS </title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <input type="text" id="busca" placeholder="Pesquisar por titulo....">
+    </header>
+    <main>
+        <section id="tarefas">
+            <h2>Tarefas <button onclick="novaTarefa()">Nova tarefa</button></h2>
+            <!-- <h6>Nenhuma tarefa registrada</h6> -->
+             <ul id="lista">
+                
+             </ul>
+        </section>
+
+        <section id="overlay" onclick="fecharModal()"></section>
+        <div class="modal" id="criarTarefa">
+            <form>
+                <h3>Criar Tarefa <box-icon name='x-circle' size="md" onclick="fecharModal()"></box-icon></h3>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao"></textarea>
+                <button>Criar tarefa</button>
+            </form>
+        </div>
+    </main>
         <script src="javascript/index.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
